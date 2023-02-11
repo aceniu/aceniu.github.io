@@ -8,9 +8,25 @@
       <link href="/posts/8818dde9.html"/>
       <url>/posts/8818dde9.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<meta name="referrer" content="no-referrer" /><p>Zabbix 是一个基于 WEB 界面的提供分布式系统监视以及网络监视功能的企业级的开源解决方案。zabbix 能监视各种网络参数,保证服务器系统的安全运营;并提供灵活的通知机制以让系统管理员快速定位/解决存在的各种问题。</p><span id="more"></span><h1 id=""><a href="#" class="headerlink" title=""></a><p class='p cyan huge center'>Zabbix简介<sup>(1)</sup></p></h1><h2 id="-1"><a href="#-1" class="headerlink" title=""></a><p class='p blue large left'>Zabbix 概述<sup>(1.1)</sup></p></h2><p>Zabbix是由Alexei Vladishev开发的一种网络监视、管理系统，基于Server-Client架构。可用于监视各种网络服务、服务器和网络机器等状态。</p><p>使用各种Database-end如MySQL, PostgresQL, sQLite, Oracle或 IBM DB2储存资料。Server端基于C语言、Web管理端frontend则是基于PHP所制作的。</p><p>Zabbix可以使用多种方式监视。可以只使用Simple Check 不需要安装Client端，亦可基于SMTP或HTTP…各种协议定制监视。</p><p>在客户端如UNIX,Windows中安装Zabbix Agent 之后，可监视 CPU Load、网络使用状况、硬盘容量等各种状态。而就算没有安装Agent 在监视对象中，Zabbix也可以经由SNMP、TCP、ICMP、利用IPMI、SSH、 telnet 对目标进行监视。</p><p>Zabbbix自带的ltem足够满足普通小公司的监控需求，对于大公司也可以设定自定义的ltem，自动生成报表，也有API可以和其他系统集成。</p><h2 id="-2"><a href="#-2" class="headerlink" title=""></a><p class='p blue large left'>使用 Zabbix 的优势<sup>(1.2)</sup></p></h2><ul><li><p>开源,无软件成本投入</p></li><li><p>Server 对设备性能要求低</p></li><li><p>支持设备多,自带多种监控模板</p></li><li><p>支持分布式集中管理,有自动发现功能,可以实现自动化监控</p></li><li><p>开放式接口,扩展性强,插件编写容易</p></li><li><p>当监控的 item 比较多服务器队列比较大时可以采用主动状态,被监控客户端主动 从server 端去下载需要监控的 item 然后取数据上传到 server 端。 这种方式对服务器的负载比较小。</p></li><li><p>Api 的支持,方便与其他系统结合</p></li><li><p>zabbix可以满足理想化的监控系统需求</p></li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> 运维 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 编程 </tag>
+            
+            <tag> zabbix </tag>
+            
+            <tag> 运维 </tag>
+            
+        </tags>
       
     </entry>
     
