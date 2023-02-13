@@ -11,15 +11,6 @@
   </url>
   
   <url>
-    <loc>https://blog.halfsummer.xyz/posts/3c3cdb74.html</loc>
-    
-    <lastmod>2023-02-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.halfsummer.xyz/posts/ba31607c.html</loc>
     
     <lastmod>2023-02-13</lastmod>
@@ -29,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://blog.halfsummer.xyz/posts/c1031b26.html</loc>
+    <loc>https://blog.halfsummer.xyz/posts/3c3cdb74.html</loc>
     
     <lastmod>2023-02-13</lastmod>
     
@@ -85,13 +76,6 @@
   
   <url>
     <loc>https://blog.halfsummer.xyz/tags/wmware/</loc>
-    <lastmod>2023-02-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.halfsummer.xyz/tags/zabbix/</loc>
     <lastmod>2023-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
