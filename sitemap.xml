@@ -55,6 +55,15 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://blog.halfsummer.xyz/posts/52702296.html</loc>
+    
+    <lastmod>2023-02-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   <url>
     <loc>https://blog.halfsummer.xyz/</loc>
@@ -63,6 +72,27 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://blog.halfsummer.xyz/tags/%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2023-02-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.halfsummer.xyz/tags/%E8%BF%90%E7%BB%B4/</loc>
+    <lastmod>2023-02-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.halfsummer.xyz/tags/Linux/</loc>
+    <lastmod>2023-02-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://blog.halfsummer.xyz/tags/emoji/</loc>
@@ -100,13 +130,6 @@
   </url>
   
   <url>
-    <loc>https://blog.halfsummer.xyz/tags/Linux/</loc>
-    <lastmod>2023-02-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.halfsummer.xyz/tags/CentOS/</loc>
     <lastmod>2023-02-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -115,20 +138,6 @@
   
   <url>
     <loc>https://blog.halfsummer.xyz/tags/Ubuntu/</loc>
-    <lastmod>2023-02-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.halfsummer.xyz/tags/%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2023-02-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.halfsummer.xyz/tags/%E8%BF%90%E7%BB%B4/</loc>
     <lastmod>2023-02-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -144,14 +153,14 @@
 
   
   <url>
-    <loc>https://blog.halfsummer.xyz/categories/Hexo/</loc>
+    <loc>https://blog.halfsummer.xyz/categories/Note/</loc>
     <lastmod>2023-02-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.halfsummer.xyz/categories/Note/</loc>
+    <loc>https://blog.halfsummer.xyz/categories/Hexo/</loc>
     <lastmod>2023-02-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
