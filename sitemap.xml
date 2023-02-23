@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.halfsummer.xyz/posts/c1031b26.html</loc>
+    <loc>https://blog.halfsummer.xyz/posts/cd0249f6.html</loc>
     
     <lastmod>2023-02-23</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://blog.halfsummer.xyz/posts/78838086.html</loc>
+    <loc>https://blog.halfsummer.xyz/posts/f99eb534.html</loc>
     
     <lastmod>2023-02-23</lastmod>
     
@@ -66,6 +66,15 @@
   
   <url>
     <loc>https://blog.halfsummer.xyz/posts/ba31607c.html</loc>
+    
+    <lastmod>2023-02-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.halfsummer.xyz/posts/c1031b26.html</loc>
     
     <lastmod>2023-02-23</lastmod>
     
@@ -199,14 +208,7 @@
   </url>
   
   <url>
-    <loc>https://blog.halfsummer.xyz/categories/lsky/</loc>
-    <lastmod>2023-02-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.halfsummer.xyz/categories/Program/VMware/</loc>
+    <loc>https://blog.halfsummer.xyz/categories/Tool/</loc>
     <lastmod>2023-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -214,6 +216,13 @@
   
   <url>
     <loc>https://blog.halfsummer.xyz/categories/Program/Operations/</loc>
+    <lastmod>2023-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.halfsummer.xyz/categories/Program/VMware/</loc>
     <lastmod>2023-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
