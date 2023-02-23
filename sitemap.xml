@@ -11,15 +11,6 @@
   </url>
   
   <url>
-    <loc>https://blog.halfsummer.xyz/posts/c1031b26.html</loc>
-    
-    <lastmod>2023-02-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.halfsummer.xyz/posts/9fc1e5d1.html</loc>
     
     <lastmod>2023-02-23</lastmod>
@@ -57,6 +48,15 @@
   
   <url>
     <loc>https://blog.halfsummer.xyz/posts/1763fb9d.html</loc>
+    
+    <lastmod>2023-02-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.halfsummer.xyz/posts/c1031b26.html</loc>
     
     <lastmod>2023-02-23</lastmod>
     
@@ -125,6 +125,20 @@
   </url>
   
   <url>
+    <loc>https://blog.halfsummer.xyz/tags/%E5%85%B0%E7%A9%BA/</loc>
+    <lastmod>2023-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.halfsummer.xyz/tags/%E5%9B%BE%E5%BA%8A/</loc>
+    <lastmod>2023-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.halfsummer.xyz/tags/WMware/</loc>
     <lastmod>2023-02-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -176,7 +190,28 @@
   </url>
   
   <url>
+    <loc>https://blog.halfsummer.xyz/categories/lsky/</loc>
+    <lastmod>2023-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.halfsummer.xyz/categories/Note/Program/</loc>
+    <lastmod>2023-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.halfsummer.xyz/categories/Program/</loc>
+    <lastmod>2023-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.halfsummer.xyz/categories/Program/WMware/</loc>
     <lastmod>2023-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
