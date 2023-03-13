@@ -636,6 +636,17 @@
     
     
     <entry>
+      <title>images</title>
+      <link href="/images/index.html"/>
+      <url>/images/index.html</url>
+      
+        <content type="html"><![CDATA[<head><meta http-equiv="refresh" content="0;url=https://images.halfsummer.xyz"></head>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/js/ali_font.js"/>
       <url>/js/ali_font.js</url>
