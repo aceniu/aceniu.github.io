@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>Git删除暂存区或版本库中的文件</title>
+      <link href="/posts/317ae1f5.html"/>
+      <url>/posts/317ae1f5.html</url>
+      
+        <content type="html"><![CDATA[<meta name="referrer" content="no-referrer" /><p>我们知道Git有三大区（工作区、暂存区、版本库）以及几个状态（untracked、unstaged、uncommited），下面只是简述下Git的大概工作流程。</p><ol><li><p>打开你的项目文件夹，除了隐藏的.git文件夹，其他项目文件位于的地方便是工作区，工作区的文件需要添加到Git的暂存区（git add），随后再提交到Git的版本库（git commit）。</p></li><li><p>首次新建的文件都是untracked状态（未跟踪），此时需要git add到暂存区，Git便会在暂存区中生成一个该文件的索引，文件此时处于uncommited状态，需要git commit生成版本库。添加到了版本库之后，再对文件进行修改，那么文件的状态会变为unstaged状态。</p></li></ol><h1 id="1）删除错误添加到暂存区的文件">1）删除错误添加到暂存区的文件</h1><p>有时你在工作区新建了文件，并且已经将它添加到了暂存区，git会告知，现有有一个文件未提交到版本库。</p><p>此时你想撤销错误添加到暂存区里的文件，可以输入以下命令：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">rm</span> --cache 文件名</span><br></pre></td></tr></table></figure><p>上面的命令仅仅删除暂存区的文件而已，不会影响工作区的文件，此时输入下面命令，git会告知有一个未跟踪的文件。</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure><h1 id="2）删除暂存区和工作区的文件">2）删除暂存区和工作区的文件</h1><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">rm</span> -f 文件名</span><br></pre></td></tr></table></figure><h1 id="3）删除错误提交的commit">3）删除错误提交的commit</h1><p>有时，不仅添加到了暂存区，而且commit到了版本库，这个时候就不能使用git rm了，需要使用git reset命令。</p><p>错误提交到了版本库，此时无论工作区、暂存区，还是版本库，这三者的内容都是一样的，所以在这种情况下，只是删除了工作区和暂存区的文件，下一次用该版本库回滚那个误添加的文件还会重新生成。</p><p>这个时候，我们必须撤销版本库的修改才能解决问题！</p><p>git reset有三个选项，–hard、–mixed、–soft。</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#仅仅只是撤销已提交的版本库，不会修改暂存区和工作区</span></span><br><span class="line">$ git reset --soft 版本库ID</span><br><span class="line"><span class="comment">#仅仅只是撤销已提交的版本库和暂存区，不会修改工作区</span></span><br><span class="line">$ git reset --mixed 版本库ID</span><br><span class="line"><span class="comment">#彻底将工作区、暂存区和版本库记录恢复到指定的版本库</span></span><br><span class="line">$ git reset --hard 版本库ID</span><br></pre></td></tr></table></figure><p>那我们到底应该用哪个选项好呢？</p><ol><li><p>如果你是在提交了后，对工作区的代码做了修改，并且想保留这些修改，那么可以使用git reset --mixed 版本库ID，注意这个版本库ID应该不是你刚刚提交的版本库ID，而是刚刚提交版本库的上一个版本库。</p></li><li><p>如果不想保留这些修改，可以直接使用彻底的恢复命令，git reset --hard 版本库ID。</p></li><li><p>为什么不使用–soft呢，因为它只是恢复了版本库，暂存区仍然存在你错误提交的文件索引，还需要进一步使用上一节的删除错误添加到暂存区的文件，详细见上文。</p></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Git如何回滚代码?</title>
+      <link href="/posts/70fb250c.html"/>
+      <url>/posts/70fb250c.html</url>
+      
+        <content type="html"><![CDATA[<meta name="referrer" content="no-referrer" /><p>我们从本地向Github或Gitlab、Gitee等远程仓库push代码时，有时候会因为一些细节或者在push之前，没有pull拉取远程仓库中最新的内容，导致push远程仓库之后，项目生产环境异常，或者无法正常部署！！！</p><h1 id="1）查看commit-hash值">1）查看commit hash值</h1><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span></span><br><span class="line">或者</span><br><span class="line">$ git reflog</span><br></pre></td></tr></table></figure><h1 id="2）执行回滚">2）执行回滚</h1><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#回滚到上一个版本</span></span><br><span class="line">$ git reset --hard xxxx</span><br></pre></td></tr></table></figure><h1 id="3）执行远程回滚命令">3）执行远程回滚命令</h1><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#强制提交到github远程仓库</span></span><br><span class="line">$ git push -f</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Tomcat 学习笔记</title>
       <link href="/posts/c1c5e0d7.html"/>
       <url>/posts/c1c5e0d7.html</url>
